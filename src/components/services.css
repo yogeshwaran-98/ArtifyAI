@@ -1,0 +1,14 @@
+/* Tailwind CSS utility to create a rotating animation */
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg); /* Rotate to 360 degrees */
+  }
+}
+
+/* Apply the animation */
+.service1 {
+  animation: rotate 10s infinite linear; /* 10s duration, infinite loop, and linear speed */
+}
